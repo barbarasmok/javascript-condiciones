@@ -5,4 +5,8 @@ const imgBorde = document.getElementById('imgBorde');
 imgBorde.addEventListener('click', function () {
   // Alternar la clase que agrega/quita el borde
   imgBorde.classList.toggle('bordeRed');
+
+  setTimeout(() => {
+    window.location.href = '../../stickers.html'; // Redirigir a la página password
+  }, 2000); // Espera 2 segundos antes de redirigir
 });

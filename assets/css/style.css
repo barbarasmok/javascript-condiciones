@@ -43,7 +43,30 @@ a:hover {
   padding: 2rem;
   text-align: center;
 }
-
+.btn-back {
+  border-radius: 100px;
+  padding: 0.25rem 1rem;
+  background-color: rgb(45, 235, 156);
+  border: none;
+  font-size: 0.75rem;
+}
+.btn-back:hover {
+  background-color: #16a424;
+  font-weight: 500;
+}
+.disclaimer {
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.disclaimer p {
+  margin-bottom: 0;
+}
 /* Borde */
 img {
   width: 300px;
@@ -54,6 +77,16 @@ img {
 }
 .bordeRed {
   border: 2px solid red;
+}
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem auto;
 }
 
 /* Stickers */
@@ -67,7 +100,6 @@ img {
   align-items: center;
   margin: 2rem auto;
 }
-
 .btn-dark {
   border-radius: 100px;
   padding: 0.5rem 1.5rem;
@@ -79,13 +111,13 @@ img {
   background-color: #474747;
   font-weight: 500;
 }
-.btn-too-many {
+.alerta-too-many {
   background-color: #ffdddd;
   color: #d8000c;
   margin-top: 2rem;
   font-size: 1.2rem;
 }
-.btn-ok {
+.alerta-ok {
   background-color: #ddffdd;
   color: #005700;
   margin-top: 2rem;
@@ -97,6 +129,27 @@ img {
   padding: 10px;
   border-radius: 5px;
 }
+
+/* Password */
+.correct1 {
+  color: green;
+}
+.correct2 {
+  color: blue;
+}
+.incorrect {
+  color: red;
+}
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .cards {
