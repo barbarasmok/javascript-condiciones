@@ -1,0 +1,129 @@
+* html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif !important;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+h2 {
+  margin-top: 0;
+}
+a {
+  color: #060606;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  color: #474747;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'navbar'
+    'filtro'
+    'main'
+    'footer';
+  gap: 0;
+  width: 100vw;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Borde */
+img {
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+  border: none; /* Sin borde inicial */
+  border-radius: 2rem;
+}
+.bordeRed {
+  border: 2px solid red;
+}
+
+/* Stickers */
+.cards {
+  display: flex;
+  gap: 1.3rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.btn-dark {
+  border-radius: 100px;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(45, 118, 235);
+  border: none;
+  font-size: 1.2rem;
+}
+.btn-dark:hover {
+  background-color: #474747;
+  font-weight: 500;
+}
+.btn-too-many {
+  background-color: #ffdddd;
+  color: #d8000c;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+.btn-ok {
+  background-color: #ddffdd;
+  color: #005700;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+.resultado {
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    gap: 1.3rem;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .grid-container {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 1024px) {
+}
